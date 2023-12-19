@@ -5,3 +5,9 @@ function greet(name: string = "Stranger"){
 greet()
 greet("Ibra")
 greet("Shuklao")
+
+
+//return type annotations
+function square(num : number) : number{
+    return num*num
+}

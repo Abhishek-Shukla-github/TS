@@ -5,3 +5,7 @@ function greet(name) {
 greet();
 greet("Ibra");
 greet("Shuklao");
+//return type annotations
+function square(num) {
+    return num * num;
+}
