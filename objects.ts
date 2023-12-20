@@ -2,7 +2,8 @@
 type Person = {
     fullName: string,
     age: number,
-    place: string
+    place: string,
+    race?: string    //Optional property is denoted with ? 
 }
 
 function printPerson(person: Person):string{
