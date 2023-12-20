@@ -1,8 +1,11 @@
-function printPerson(person: {
+//Creating type alias
+type Person = {
     fullName: string,
     age: number,
     place: string
-}):string{
+}
+
+function printPerson(person: Person):string{
     return `Hi ,name: ${person.fullName} and I'm ${person.age} and i'm from ${person.place}`
 }
 
