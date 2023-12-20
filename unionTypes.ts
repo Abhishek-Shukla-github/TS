@@ -20,3 +20,7 @@ JohnDoe = {
     name: "John",
     type: "Cat"
 } // Later changed to the Pet type and TS doesn't complain because JohnDoe is a union of Person and Pet types
+
+
+//Union types with Arrays
+let numBoolArray: (number | boolean)[] = [1,2,3,4,5,true,false]
