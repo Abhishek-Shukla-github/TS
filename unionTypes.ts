@@ -24,3 +24,8 @@ JohnDoe = {
 
 //Union types with Arrays
 let numBoolArray: (number | boolean)[] = [1,2,3,4,5,true,false]
+
+
+
+//Literal Types: Specifies what type and value a variable can hold
+let VotingAge: (10|18) = 10 
