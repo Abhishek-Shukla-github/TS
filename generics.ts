@@ -15,3 +15,13 @@ interface Cat{
 identity<string>("Hello")
 identity<number>(4)
 identity<Cat>({name: "Billy",age: 21})
+
+
+//Example 2
+function getRandomElement<T>(item: T[]) : T{
+    let rand = Math.floor(Math.random()*10)
+    return item[rand]
+}
+
+getRandomElement<number>([1,2,3,4,5,6])
+getRandomElement<string>(["a","b","c"])
