@@ -25,3 +25,18 @@ function getRandomElement<T>(item: T[]) : T{
 
 getRandomElement<number>([1,2,3,4,5,6])
 getRandomElement<string>(["a","b","c"])
+
+//Multiple Types
+interface Species{
+    type: string
+}
+
+interface Human{
+    age: number
+}
+
+function mergeObj<T,U>(item1:T, item2: U){
+    return {...item1, ...item2}
+}
+
+let res = mergeObj<Species, Human>({type: "Human"},{age: 21})
